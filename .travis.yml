@@ -1,0 +1,18 @@
+# language: perl
+group: dev
+
+# perl:
+#   - "5.26"
+
+arch:
+- ppc64le
+# - arm64
+# - amd64
+
+before_install:
+  - ls
+#   - tar --help
+#   - tar --version
+
+script:
+  - cpanm --version 
