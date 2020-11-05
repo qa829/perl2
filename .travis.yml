@@ -16,4 +16,5 @@ before_install:
 
 script:
   - env
-  - cpanm --version > /dev/null &
+#   - f=$(mktemp); cpanm --version > /dev/null &
+  - f=$(mktemp); cpanm --version > $f
