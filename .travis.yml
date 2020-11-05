@@ -18,5 +18,6 @@ script:
 #   - env
 #   - f=$(mktemp); cpanm --version > /dev/null &
 #   - f=$(mktemp); cpanm --version > $f &
-  - f=$(mktemp); cpanm --version > $f &
-  - echo $f
+#   - f=$(mktemp); cpanm --version | tee $f &
+#   - ls -hl $f
+  - version=$(cpanm --version &); echo $version 
