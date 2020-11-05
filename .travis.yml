@@ -1,11 +1,11 @@
-# language: perl
-# group: dev
+language: perl
+group: dev
 
 # perl:
 #   - "5.26"
 
-# arch:
-# - ppc64le
+arch:
+- ppc64le
 # - arm64
 # - amd64
 
@@ -15,5 +15,5 @@ before_install:
 #   - tar --version
 
 script:
-  - cpanm --version 
   - env
+  - cpanm --version 
