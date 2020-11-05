@@ -15,7 +15,8 @@ before_install:
 #   - tar --version
 
 script:
-  - env
+#   - env
 #   - f=$(mktemp); cpanm --version > /dev/null &
 #   - f=$(mktemp); cpanm --version > $f &
-  - f=$(mktemp); cpanm --version > $f; cat $f &
+  - f=$(mktemp); cpanm --version > $f &
+  - cat $f
