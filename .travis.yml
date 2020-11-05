@@ -16,4 +16,4 @@ before_install:
 
 script:
   - env
-  - cpanm --version &
+  - cpanm --version > /dev/null
